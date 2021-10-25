@@ -13,7 +13,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'clashperk',
-  projectName: 'clashofclans.js',
+  projectName: 'clashofclans.js.org',
 
   presets: [
     [
@@ -82,7 +82,7 @@ const config = {
             ]
           },
           {
-            title: 'Developer Site',
+            title: 'Developer',
             items: [
               {
                 label: 'Clash of Clans API',
@@ -121,6 +121,7 @@ const config = {
         tsconfig: './lib/tsconfig.json',
         entryPoints: ['./lib/src/index.ts'],
         excludeExternals: true,
+        excludeInternal: true,
         sort: ['instance-first']
       }
     ]
