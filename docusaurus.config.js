@@ -77,7 +77,7 @@ const config = {
             items: [
               {
                 label: 'Community Discord',
-                href: 'https://discordapp.com/clashapi',
+                href: 'https://discord.gg/clashapi',
               }
             ]
           },
@@ -122,6 +122,8 @@ const config = {
         entryPoints: ['./lib/src/index.ts'],
         excludeExternals: true,
         excludeInternal: true,
+        excludePrivate: true,
+        excludeProtected: true,
         sort: ['instance-first']
       }
     ]
