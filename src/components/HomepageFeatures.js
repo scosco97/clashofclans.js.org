@@ -20,9 +20,10 @@ const FeatureList = [
     ],
   },
   {
-    title: '...',
+    title: 'What\'s new?',
     description: (
       <>
+        Hassle-free login with email password makes API key management easier.<br />
         Custom events allow creators absolute freedom in their creativity.
       </>
     ),

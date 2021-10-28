@@ -6,7 +6,11 @@ const sidebars = {
     {
       type: 'category',
       label: 'GENERAL',
-      items: ['intro'],
+      items: ['intro', {
+        type: 'link',
+        href: 'https://github.com/clashperk/clashofclans.js/blob/master/CHANGELOG.md',
+        label: 'ChangeLog'
+      }],
       collapsed: false
     },
     {

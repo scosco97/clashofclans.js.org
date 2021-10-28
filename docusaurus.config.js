@@ -22,10 +22,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./.sidebar.config.js'),
-          editUrl: 'https://github.com/clashperk/clashofclans.js/edit/master/',
+          editUrl: 'https://github.com/clashperk/clashofclans.js.org/edit/master/',
         },
         blog: {
           path: 'guide',
+          showReadingTime: false,
           routeBasePath: 'guide',
           editUrl: 'https://github.com/clashperk/clashofclans.js.org/edit/master/'
         },
@@ -57,7 +58,7 @@ const config = {
             href: 'https://github.com/clashperk/clashofclans.js',
             label: 'GitHub',
             position: 'right',
-          },
+          }
         ],
       },
       footer: {
@@ -67,8 +68,8 @@ const config = {
             title: 'Resource',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'NPM',
+                href: 'https://www.npmjs.com/package/clashofclans.js',
               }
             ]
           },
@@ -115,7 +116,7 @@ const config = {
   plugins: [
     [
       'docusaurus-plugin-typedoc',
-      {
+      ({
         id: 'lib',
         readme: 'none',
         tsconfig: './lib/tsconfig.json',
@@ -125,7 +126,7 @@ const config = {
         excludePrivate: true,
         excludeProtected: true,
         sort: ['instance-first']
-      }
+      })
     ]
   ]
 };
