@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclashofclans_js_org=self.webpackChunkclashofclans_js_org||[]).push([[4187],{4387:function(e){e.exports=JSON.parse('{"permalink":"/guide","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
