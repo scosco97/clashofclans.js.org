@@ -3,11 +3,17 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const site = {
+  title: 'clashofclans.js',
+  url: 'https://clashofclans.js.org',
+  description: 'JavaScript library for interacting with the Clash of Clans API'
+};
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'clashofclans.js',
-  tagline: 'JavaScript library for interacting with the Clash of Clans API',
-  url: 'https://clashofclans.js.org',
+  title: site.title,
+  tagline: site.description,
+  url: site.url,
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -118,7 +124,12 @@ const config = {
       },
       colorMode: {
         defaultMode: 'dark'
-      }
+      },
+      metadatas: [
+        { name: 'theme-color', content: '#5970C1' },
+        { property: 'og:title', content: site.title },
+        { property: 'og:description', content: site.description }
+      ]
     }),
 
   plugins: [
