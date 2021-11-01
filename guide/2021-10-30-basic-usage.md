@@ -23,7 +23,6 @@ authors: [suvajit, santosh]
     const clashClient = new Client();
 
     (async function () {
-	    await clashClient.login()
         const clan = await clashClient.getClan('#1234')
         console.log(clan) // returns clans data if valid tag
     })();
