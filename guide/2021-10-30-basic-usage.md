@@ -10,9 +10,8 @@ authors: [suvajit, santosh]
     import { Client } from 'clashofclans.js';
     const clashClient = new Client();
 
-    // Login with email and password
     (async function () {
-	    await clashClient.login({ email: 'email', password: 'password' })
+	    await clashClient.login()
         const player = await clashClient.getPlayer('#1234')
         console.log(player)// returns player data if valid tag
     })();
