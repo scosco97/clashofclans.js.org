@@ -11,7 +11,6 @@ authors: [suvajit, santosh]
     const clashClient = new Client();
 
     (async function () {
-	    await clashClient.login()
         const player = await clashClient.getPlayer('#1234')
         console.log(player)// returns player data if valid tag
     })();
