@@ -16,8 +16,7 @@ Basic Client that creates connection with your created keys
         keys: ['***']
     });
 
-    // Login with email and password
     (async function () {
-	    await clashClient.login({ email: 'email', password: 'password' })
+	    await clashClient.login()
     })();
 ```
