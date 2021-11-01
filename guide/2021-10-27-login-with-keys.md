@@ -15,8 +15,4 @@ Basic Client that creates connection with your created keys
     const clashClient = new Client({
         keys: ['***']
     });
-
-    (async function () {
-	    await clashClient.login()
-    })();
 ```
