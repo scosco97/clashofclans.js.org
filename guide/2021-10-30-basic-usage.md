@@ -24,9 +24,8 @@ authors: [suvajit, santosh]
     import { Client } from 'clashofclans.js';
     const clashClient = new Client();
 
-    // Login with email and password
     (async function () {
-	    await clashClient.login({ email: 'email', password: 'password' })
+	    await clashClient.login()
         const clan = await clashClient.getClan('#1234')
         console.log(clan) // returns clans data if valid tag
     })();
