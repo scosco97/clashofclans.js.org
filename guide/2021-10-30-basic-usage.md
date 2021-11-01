@@ -4,20 +4,30 @@ title: Basic Usage
 authors: [suvajit, santosh]
 ---
 
+### Get Player Example ###
+```ts
+    // Initialize the API Client
+    import { Client } from 'clashofclans.js';
+    const clashClient = new Client();
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+    // Login with email and password
+    (async function () {
+	    await clashClient.login({ email: 'email', password: 'password' })
+        const player = await clashClient.getPlayer('#1234')
+        console.log(player)// returns player data if valid tag
+    })();
+```
 
-Simply add Markdown files (or folders) to the `blog` directory.
+### Get Clan Example ###
+```ts
+    // Initialize the API Client
+    import { Client } from 'clashofclans.js';
+    const clashClient = new Client();
 
-Regular blog authors can be added to `authors.yml`.
-
-The blog post date can be extracted from filenames, such as:
-
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
-
-A blog post folder can be convenient to co-locate blog post images:
-
-The blog supports tags as well!
-
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+    // Login with email and password
+    (async function () {
+	    await clashClient.login({ email: 'email', password: 'password' })
+        const clan = await clashClient.getClan('#1234')
+        console.log(clan) // returns clans data if valid tag
+    })();
+```
