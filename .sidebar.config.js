@@ -7,9 +7,9 @@ const sidebars = {
       type: 'category',
       label: 'GENERAL',
       items: ['intro', {
-        type: 'link',
-        href: 'https://github.com/clashperk/clashofclans.js/blob/master/CHANGELOG.md',
-        label: 'ChangeLog'
+        type: 'doc',
+        id: 'changelog',
+        label: 'Changelog'
       }],
       collapsed: false
     },

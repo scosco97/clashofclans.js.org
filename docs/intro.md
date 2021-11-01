@@ -23,7 +23,7 @@ slug: /
 
 ### Links
 
--   [Documentation](https://cocjs.suvajit.me/docs/intro)
+-   [Documentation](https://clashofclans.js.org/docs/)
 -   [Clash of Clans Developer Website](https://developer.clashofclans.com/)
 -   [Clash of Clans API Community Discord](https://discord.gg/Eaja7gJ)
 

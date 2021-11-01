@@ -3,17 +3,24 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const site = {
+  title: 'clashofclans.js',
+  url: 'https://clashofclans.js.org',
+  description: 'JavaScript library for interacting with the Clash of Clans API'
+};
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'clashofclans.js',
-  tagline: 'JavaScript library for interacting with the Clash of Clans Game API',
-  url: 'https://clashofclans.js.org',
+  title: site.title,
+  tagline: site.description,
+  url: site.url,
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'clashperk',
   projectName: 'clashofclans.js.org',
+  trailingSlash: false,
 
   presets: [
     [
@@ -40,6 +47,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'wip',
+        content: '[WIP] Welcome to v2.0.0 documentation. For old v1.5.5 docs, visit <a target="_blank" href="https://www.npmjs.com/package/clashofclans.js/v/1.5.5">NPM</a>',
+        backgroundColor: '#FAFBFC',
+        textColor: '#091E42',
+        isCloseable: true
+      },
       navbar: {
         title: 'clashofclans.js',
         logo: {
@@ -110,7 +124,12 @@ const config = {
       },
       colorMode: {
         defaultMode: 'dark'
-      }
+      },
+      metadatas: [
+        { name: 'theme-color', content: '#5970C1' },
+        { property: 'og:title', content: site.title },
+        { property: 'og:description', content: site.description }
+      ]
     }),
 
   plugins: [
